@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./project1_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+  <style type="text/css" data-vite-dev-id="D:/react-project/project1/src/index.css"> 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+/* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+:root{
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --text: #0b1020;
+  --muted: #6b7280;
+}
+/* global base */
+html, body {
+  font-family: var(--font-sans);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/App.css">/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --radius-md: 0.375rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
+  }
+  .hidden {
+    display: none;
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .placeholder-gray-400 {
+    &::placeholder {
+      color: var(--color-gray-400);
+    }
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-150 {
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
+  .hover\:scale-125 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 125%;
+        --tw-scale-y: 125%;
+        --tw-scale-z: 125%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-border-style: solid;
+      --tw-duration: initial;
+      --tw-ease: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+    }
+  }
+}
+</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/components/hero/styles/hero.css">:root{
+  --hero-bg:#f3f6f3;
+  --text:#0b1020;
+  --muted:#6b7280;
+  --accent:#ff2d5b;
+  --max-width:1280px;
+}
+
+.hero{
+  background:var(--hero-bg);
+  width:100%;
+  padding-bottom:64px;
+}
+
+.hero-inner{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    align-items: center;
+    gap: 32px;
+    min-height: 688px;
+}
+
+.hero-left{ padding-left:8px;
+  z-index:2;
+}
+
+.eyebrow{
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--muted);
+  border-left: 3px solid #ff6b9f;
+  padding-left: 12px;
+  margin-bottom: 18px;
+}
+
+.hero-title{
+  font-family: var(--font-sans);
+  font-weight: 800;               /* very heavy like the design */
+  font-size: 84px;                /* desktop size */
+  line-height: 0.95;              /* tight stacking */
+  letter-spacing: -1px;           /* condensed look */
+  color: var(--text);
+  margin: 0 0 32px 0;
+  -webkit-font-smoothing:antialiased;
+}
+
+.cta-btn{
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+/* responsive */
+@media (max-width:1100px){
+  .hero-title{ font-size:64px; }
+}
+@media (max-width:820px){
+  .hero-title{ font-size:44px; }
+}
+
+/* RIGHT */
+.hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -75px;
+    height: 965px;
+}
+
+
+.hero-circle{
+  position:absolute;
+  width:420px;
+  height:420px;
+  right:0;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius:50%;
+  pointer-events:none;
+  z-index:1;
+  background: radial-gradient(circle at center, #ffffff 0%, rgba(255,255,255,0.95) 60%);
+  box-shadow: 0 0 0 40px rgba(243,246,243,1);
+  transform-origin:center;
+  will-change: transform, opacity, box-shadow;
+  overflow: visible; /* ensure expanding rings aren't clipped */
+}
+
+/* two expanding/fading rings for a radar effect (higher contrast + bigger final scale) */
+.hero-circle::before,
+.hero-circle::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(0.25);
+  border-radius: 50%;
+  border: 3px solid rgba(11,16,32,0.08);
+  background: transparent;
+  opacity: 0;
+  z-index: 2;
+  will-change: transform, opacity, box-shadow;
+  animation: radarPulse 2.8s cubic-bezier(.22,.9,.2,1) infinite;
+}
+
+/* stagger second pulse */
+.hero-circle::after{
+  animation-delay: 1.4s;
+}
+
+/* keyframes: start small -> grow large (beyond parent) -> fade out smoothly */
+@keyframes radarPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.25);
+    opacity: 0.9;
+    box-shadow: 0 0 30px rgba(11,16,32,0.06);
+    border-color: rgba(11,16,32,0.12);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0.28;
+    box-shadow: 0 0 80px rgba(11,16,32,0.06);
+    border-color: rgba(11,16,32,0.08);
+  }
+  85% {
+    transform: translate(-50%, -50%) scale(2.6);
+    opacity: 0.08;
+    box-shadow: 0 0 120px rgba(11,16,32,0.04);
+    border-color: rgba(11,16,32,0.04);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3.2);
+    opacity: 0;
+  }
+}
+
+/* respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-circle::before,
+  .hero-circle::after {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+
+/* ...existing code... */
+
+.hero{
+  background:var(--hero-bg);
+  width:100%;
+  padding-top:90px; /* room for fixed nav */
+  padding-bottom:64px;
+  overflow-x: hidden; /* prevent page scrollbar when pulses grow */
+  position:relative;
+}
+
+
+/* central static circle (visual center) */
+.hero-circle{
+  position:absolute;
+  width:420px;
+  height:420px;
+  right:0;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius:50%;
+  z-index:1;
+  background: radial-gradient(circle at center, #ffffff 0%, rgba(255,255,255,0.95) 60%);
+  box-shadow: 0 0 0 40px rgba(243,246,243,1);
+  transform-origin:center;
+  will-change: transform, opacity;
+  /* no animation on the base circle; pulses come from pseudo-elements */
+}
+
+/* two expanding/fading rings for radar effect */
+.hero-circle::before,
+.hero-circle::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(0.20);
+  border-radius: 50%;
+  border: 2px solid rgba(11,16,32,0.10);
+  background: transparent;
+  opacity: 0;
+  z-index: 0;
+  will-change: transform, opacity;
+  animation: radarPulse 2.8s cubic-bezier(.22,.9,.2,1) infinite;
+  /* using transform from center ensures even expansion and reduces layout shifts */
+}
+
+/* stagger the two pulses */
+.hero-circle::after{
+  animation-delay: 1.4s;
+}
+
+/* smooth grow + fade (no undershoot) */
+@keyframes radarPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.20);
+    opacity: 0.9;
+    box-shadow: 0 0 30px rgba(11,16,32,0.06);
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(1.45);
+    opacity: 0.22;
+    box-shadow: 0 0 80px rgba(11,16,32,0.05);
+  }
+  85% {
+    transform: translate(-50%, -50%) scale(2.1);
+    opacity: 0.08;
+    box-shadow: 0 0 110px rgba(11,16,32,0.03);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.6);
+    opacity: 0;
+  }
+}
+
+/* respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-circle::before,
+  .hero-circle::after {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+
+.hero{
+  background:var(--hero-bg);
+  width:100%;
+  padding-top:90px; /* room for fixed nav */
+  padding-bottom:64px;
+  overflow-x: hidden; /* prevent page scrollbar when pulses grow */
+  position:relative;
+}
+
+
+/* central static circle (visual center) */
+.hero-circle{
+  position:absolute;
+  width:420px;
+  height:420px;
+  right:0;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius:50%;
+  z-index:1;
+  background: radial-gradient(circle at center, #ffffff 0%, rgba(255,255,255,0.95) 60%);
+  box-shadow: 0 0 0 40px rgba(243,246,243,1);
+  transform-origin:center;
+  will-change: transform, opacity;
+  /* no animation on the base circle; pulses come from pseudo-elements */
+}
+
+/* two expanding/fading rings for radar effect */
+.hero-circle::before,
+.hero-circle::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(0.20);
+  border-radius: 50%;
+  border: 2px solid rgba(11,16,32,0.10);
+  background: transparent;
+  opacity: 0;
+  z-index: 0;
+  will-change: transform, opacity;
+  animation: radarPulse 2.8s cubic-bezier(.22,.9,.2,1) infinite;
+  /* using transform from center ensures even expansion and reduces layout shifts */
+}
+
+/* stagger the two pulses */
+.hero-circle::after{
+  animation-delay: 1.4s;
+}
+
+/* smooth grow + fade (no undershoot) */
+@keyframes radarPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.20);
+    opacity: 0.9;
+    box-shadow: 0 0 30px rgba(11,16,32,0.06);
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(1.45);
+    opacity: 0.22;
+    box-shadow: 0 0 80px rgba(11,16,32,0.05);
+  }
+  85% {
+    transform: translate(-50%, -50%) scale(2.1);
+    opacity: 0.08;
+    box-shadow: 0 0 110px rgba(11,16,32,0.03);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.6);
+    opacity: 0;
+  }
+}
+
+/* respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-circle::before,
+  .hero-circle::after {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* ...existing code... */
+
+.hero-image-wrap{
+  width:340px;
+  height:420px;
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  transform: translateX(14px);
+}
+
+.hero-image{
+width: auto;
+    height: 100%;
+    display: block;
+    transform: translateY(80px) translateX(-30px);
+}
+
+/* Responsive */
+@media (max-width:1100px){
+  .hero-title{ font-size:64px; }
+  .hero-inner{ grid-template-columns: 1fr 360px; }
+  .hero-circle{ width:360px; height:360px; }
+}
+
+@media (max-width:820px){
+  .hero-inner{ grid-template-columns: 1fr; gap:24px; padding-top:40px; }
+  .hero-right{ order:2; }
+  .hero-left{ order:1; text-align:left; }
+  .hero-title{ font-size:44px; }
+  .hero-circle{ display:none; }
+  .hero-image-wrap{ width:320px; height:320px; margin:0 auto; transform:none; }
+}</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/components/styles/navBar.css">:root{
+  --bg:#f3f6f3; /* pale background like design */
+  --text:#0c0e14;
+  --muted:#6b7280;
+  --accent:#ff6b9f;
+  --nav-height:76px;
+  --max-width:1280px;
+}
+
+*{box-sizing:border-box}
+.nav-container{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:var(--nav-height);
+  background:var(--bg);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  z-index:50;
+  display:flex;
+  align-items:center;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.nav-inner{
+  width:100%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* left - logo + menu */
+.nav-left{ display:flex; align-items:center; gap:28px; }
+
+.logo{ display:flex; align-items:center; gap:10px; }
+.logo-mark{
+  width:40px; height:30px; border-radius:6px;
+  background:linear-gradient(135deg,#ff7aa2 0%, #6fbfff 100%);
+  box-shadow:0 1px 0 rgba(0,0,0,0.04);
+}
+.logo-text{ font-size:14px; color:var(--text); display:flex; gap:8px; align-items:baseline; }
+.logo-text strong{ font-weight:700; font-size:16px; }
+.logo-text .shop{ font-size:11px; color:var(--muted); margin-left:2px; }
+
+/* menu */
+.nav-menu ul{ list-style:none; margin:0; padding:0; display:flex; gap:22px; align-items:center; }
+.nav-menu li{ font-size:13px; color:var(--muted); cursor:pointer; white-space:nowrap; }
+.nav-menu li:hover{ color:var(--text); }
+
+/* center - search */
+.nav-center{ flex:1; display:flex; justify-content:center; }
+.search{
+  width:520px;
+  max-width:60%;
+  display:flex; align-items:center; gap:12px;
+  background:#fff; border-radius:999px; padding:10px 16px;
+  box-shadow: inset 0 0 0 1px rgba(16,24,40,0.04);
+}
+.search .icon{ width:18px; height:18px; color:#9aa0a6; flex:0 0 18px; }
+.search input{
+  border:0; outline:none; width:100%; font-size:14px; color:var(--text);
+  background:transparent;
+}
+
+/* right icons */
+.nav-right{ display:flex; align-items:center; gap:14px; }
+.icon-btn{
+  background:transparent; border:0; display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:44px; border-radius:8px; cursor:pointer; color:var(--text);
+}
+.icon-btn svg{ width:20px; height:20px; color:var(--muted); }
+.icon-btn:hover svg{ color:var(--text); }
+
+.with-badge{ position:relative; }
+.badge{
+  position:absolute; top:6px; right:6px; min-width:16px; height:16px; line-height:16px;
+  border-radius:999px; background:#ff2d5b; color:#fff; font-size:11px; text-align:center; padding:0 4px;
+  display:inline-block;
+}
+
+/* small caret */
+.caret{ font-size:10px; color:var(--muted); margin-left:4px; }
+
+/* responsive */
+@media (max-width:1000px){
+  .search{ width:360px; }
+  .nav-menu ul{ gap:14px; }
+  .nav-inner{ padding:0 16px; }
+}
+@media (max-width:760px){
+  .nav-menu{ display:none; }
+  .search{ max-width:220px; width:220px; }
+}
+/* filepath: d:\react-project\project1\src\components\navBar\navBar.css */
+:root{
+  --bg:#f3f6f3; /* pale background like design */
+  --text:#0c0e14;
+  --muted:#6b7280;
+  --accent:#ff6b9f;
+  --nav-height:76px;
+  --max-width:1280px;
+}
+
+*{box-sizing:border-box}
+.nav-container{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:var(--nav-height);
+  background:var(--bg);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  z-index:50;
+  display:flex;
+  align-items:center;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.nav-inner{
+  width:100%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* left - logo + menu */
+.nav-left{ display:flex; align-items:center; gap:28px; }
+
+.logo{ display:flex; align-items:center; gap:10px; }
+.logo-mark{
+  width:40px; height:30px; border-radius:6px;
+  background:linear-gradient(135deg,#ff7aa2 0%, #6fbfff 100%);
+  box-shadow:0 1px 0 rgba(0,0,0,0.04);
+}
+.logo-text{ font-size:14px; color:var(--text); display:flex; gap:8px; align-items:baseline; }
+.logo-text strong{ font-weight:700; font-size:16px; }
+.logo-text .shop{ font-size:11px; color:var(--muted); margin-left:2px; }
+
+/* menu */
+.nav-menu ul{ list-style:none; margin:0; padding:0; display:flex; gap:22px; align-items:center; }
+.nav-menu li{ font-size:13px; color:var(--muted); cursor:pointer; white-space:nowrap; }
+.nav-menu li:hover{ color:var(--text); }
+
+/* center - search */
+.nav-center{ flex:1; display:flex; justify-content:center; }
+.search{
+  width:520px;
+  max-width:60%;
+  display:flex; align-items:center; gap:12px;
+  background:#fff; border-radius:999px; padding:10px 16px;
+  box-shadow: inset 0 0 0 1px rgba(16,24,40,0.04);
+}
+.search .icon{ width:18px; height:18px; color:#9aa0a6; flex:0 0 18px; }
+.search input{
+  border:0; outline:none; width:100%; font-size:14px; color:var(--text);
+  background:transparent;
+}
+
+/* right icons */
+.nav-right{ display:flex; align-items:center; gap:14px; }
+.icon-btn{
+  background:transparent; border:0; display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:44px; border-radius:8px; cursor:pointer; color:var(--text);
+}
+.icon-btn svg{ width:20px; height:20px; color:var(--muted); }
+.icon-btn:hover svg{ color:var(--text); }
+
+.with-badge{ position:relative; }
+.badge{
+  position:absolute; top:6px; right:6px; min-width:16px; height:16px; line-height:16px;
+  border-radius:999px; background:#ff2d5b; color:#fff; font-size:11px; text-align:center; padding:0 4px;
+  display:inline-block;
+}
+
+/* small caret */
+.caret{ font-size:10px; color:var(--muted); margin-left:4px; }
+
+/* responsive */
+@media (max-width:1000px){
+  .search{ width:360px; }
+  .nav-menu ul{ gap:14px; }
+  .nav-inner{ padding:0 16px; }
+}
+@media (max-width:760px){
+  .nav-menu{ display:none; }
+  .search{ max-width:220px; width:220px; }
+}
+.nav-container,
+.nav-inner,
+.nav-menu,
+.logo-text,
+.search input {
+  font-family: var(--font-sans);
+  color: var(--text);
+}
+
+/* nav links */
+.nav-menu li{
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--muted);
+  letter-spacing: 0.2px;
+}
+
+/* brand */
+.logo-text strong{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* search placeholder */
+.search input::placeholder{
+  color: #9aa0a6;
+  font-weight: 400;
+}
+
+/* smooth transition and scrolled state */
+.nav-container{
+  transition: background-color 220ms ease, box-shadow 220ms ease, border-bottom-color 220ms ease;
+}
+
+.nav-container.scrolled{
+  background: #ffffff;
+  border-bottom-color: rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(12,14,20,0.06);
+}
+
+.nav-container.scrolled .logo-text,
+.nav-container.scrolled .nav-menu li,
+.nav-container.scrolled .search input,
+.nav-container.scrolled .icon-btn svg{
+  color: var(--text);
+}
+
+.nav-container.scrolled .search{
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(16,24,40,0.04);
+}
+/* ensure only the top-level menu is a horizontal flex row (prevents nested ul from inheriting) */
+.nav-menu > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+/* each top-level li should be relative so absolute submenu can position against it */
+.nav-menu li {
+  position: relative;
+}
+
+/* submenu base (hidden by default) */
+.nav-menu .submenu {
+  display: none;               /* hidden until opened */
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 180px;
+  flex-direction: column;
+  gap: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 6px 0;
+  box-shadow: 0 10px 30px rgba(12,14,20,0.08);
+  z-index: 60;
+  white-space: nowrap;
+}
+
+/* show submenu when parent has .open or when not hidden (for accessibility) */
+.nav-menu .has-submenu.open > .submenu,
+.nav-menu .has-submenu > .submenu:not([hidden]) {
+  display: flex;
+}
+
+/* submenu list items stacked vertically */
+.nav-menu .submenu > li {
+  display: block;
+  padding: 10px 18px;
+  font-size: 14px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.nav-menu .submenu > li:hover {
+  background: rgba(0,0,0,0.02);
+  color: var(--text);
+}
+
+/* keep submenu button appearance neutral */
+.submenu-toggle {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* small caret spacing */
+.caret { margin-left: 6px; font-size: 12px; }
+
+/* ensure submenu doesn't push layout or create scrollbars */
+.nav-container, .nav-inner { overflow: visible; }</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/components/styles/searchBar.css">.search-bar{
+    width: 100%;
+    border-radius: 8px;
+    padding: 5rem;
+    margin:3rem
+}
+.search-bar input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: white;
+    font-size: 3rem; /* increase input text size */
+    height: 6rem;
+    text-align: center;
+}
+/* bigger placeholder */
+.search-bar input::placeholder{
+    font-size: 3rem;
+    color: rgba(255,255,255,0.6);
+}
+.search-bar input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Tailwind's blue-500 with opacity */
+}
+.search-bar-container{
+    height: 6rem;
+}
+.search-bar svg{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.15s ease-out;
+}</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/components/categories/styles/categories.css">:root{
+  --accent: #ff2d5b;
+  --muted: #6b7280;
+  --text: #0b1020;
+}
+
+.categories{
+    width: 1430px;
+    margin: 48px auto;
+    height: 350px;
+}
+
+.categories-row{
+  display: flex;
+  align-items:center;
+  --count: 4;
+  height: inherit;
+}
+
+.cat-item{
+  flex: 1 1 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  height: inherit;
+}
+
+.category-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 8px 12px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(11,16,32,0.04);
+  width: 100%;
+  height: inherit;
+}
+.category-media{
+      width: 100%;
+}
+.category-media img{
+  width: 100%;
+  height: 160px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:6px;
+  overflow:hidden;
+  height: 250px;
+}
+
+.category-title{
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+  font-size: 15px;
+}
+
+.categories-indicator-wrap{
+  margin-top: 18px;
+  height: 4px;
+  position: relative;
+  background: linear-gradient(90deg, rgba(0,0,0,0.04), rgba(0,0,0,0.02));
+}
+
+.categories-indicator{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, var(--accent), #ff6b9f);
+  transition: transform 360ms cubic-bezier(.2,.9,.2,1), opacity 240ms;
+  border-radius: 2px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03) inset;
+}
+
+.cat-item:focus .category-card,
+.cat-item:hover .category-card{
+  outline: none;
+  transform: translateY(-4px);
+  transition: transform 220ms;
+}
+
+.cat-item.active .category-title{
+  color: var(--text);
+  height: inherit;
+}
+
+@media (max-width:900px){
+  .categories-row{ gap: 18px; }
+  .category-media{ height:140px; }
+}
+@media (max-width:640px){
+  .categories-row{ flex-direction: row; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom:8px; }
+  .cat-item{ min-width: 240px; flex: 0 0 240px; scroll-snap-align: start; }
+  .categories-indicator{ display:none; }
+}
+</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/components/popularProducts/styles/ProductCard.css">.product-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .image-container img {
+  transform: scale(1.1);
+}
+
+/* Add to Cart button */
+.add-to-cart {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .add-to-cart {
+  opacity: 1;
+}
+
+/* Side icons */
+.icon-panel {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: right 0.3s ease;
+}
+
+.product-card:hover .icon-panel {
+  right: 10px;
+}
+
+.side-icon {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.side-icon:hover {
+  transform: scale(1.2);
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.price {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.discounted-price {
+  color: #e60023;
+  font-weight: bold;
+}
+
+.sale-tag {
+  background-color: #ffcc00;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-size: 12px;
+}</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/components/popularProducts/styles/ProductGrid.css">.app {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tabs button.active {
+  background-color: #333;
+  color: white;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}</style><style type="text/css" data-vite-dev-id="D:/react-project/project1/src/components/popularProducts/styles/popularProducts.css">.eyebrow-header{
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.1;
+  color: var(--muted);
+  border-left: 3px solid #ff6b9f;
+  padding-left: 12px;
+  margin-bottom: 18px;
+  margin-left: 45px;
+  margin-top: 6rem;
+}</style><style type="text/css">.styles-module_blinkingCursor__yugAC{color:inherit;font:inherit;left:3px;line-height:inherit;opacity:1;position:relative;top:0}.styles-module_blinking__9VXRT{animation-duration:.8s;animation-iteration-count:infinite;animation-name:styles-module_blink__rqfaf}@keyframes styles-module_blink__rqfaf{0%{opacity:1}to{opacity:0}}</style></head>
+  <body>
+    <div id="root"><header class="nav-container scrolled"><div class="nav-inner"><div class="nav-left"><div class="logo"><span class="logo-mark" aria-hidden="true"></span><div class="logo-text"><strong>Konukko</strong></div></div><nav class="nav-menu" aria-label="Primary"><ul><li>Home</li><li>About Us</li><li class="has-submenu "><button type="button" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Pages <span class="caret">▾</span></button><ul class="submenu" aria-label="Pages" hidden=""><li>Shop</li><li>Cart</li><li>WishList</li><li>Wallet</li></ul></li><li>Contact us</li></ul></nav></div><div class="nav-center"><div class="search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" fill="none"></circle></svg><input placeholder="Search for products..." type="search"></div></div><div class="nav-right"><button class="icon-btn" aria-label="Profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 20a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><button class="icon-btn with-badge" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.1 21s-7.6-4.9-9.4-8.2C.9 9.7 4.1 5 8.6 5c2.4 0 3.9 1.4 3.9 1.4S15 5 17.4 5C21.9 5 25.1 9.7 21.3 12.8 19.5 15.1 12.1 21 12.1 21z" stroke="currentColor" stroke-width="0.8" fill="currentColor"></path></svg><span class="badge">0</span></button><button class="icon-btn with-badge" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.6 9.3A2 2 0 0 1 17.5 17H9.2a2 2 0 0 1-1.9-1.5L5 3H2" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="10" cy="20" r="1" fill="currentColor"></circle><circle cx="18" cy="20" r="1" fill="currentColor"></circle></svg><span class="badge">0</span></button></div></div></header><section class="hero"><div class="hero-inner"><div class="hero-left"><div class="eyebrow"><div>Best Ear</div><div>Headphones</div></div><h1 class="hero-title"><div>Music To</div><div>Fill Your Heart</div></h1><button class="cta-btn" type="button"><span>Shop Now</span><span class="arrow">→</span></button></div><div class="hero-right" aria-hidden="true"><div class="hero-circle"></div><div class="hero-image-wrap"><img alt="" class="hero-image" src="./project1_files/image.png"></div></div></div></section><section class="categories"><div class="categories-row" style="--count: 4;"><button class="cat-item active" aria-pressed="true"><div class="category-card"><div class="category-media"><img alt="Exercise Bike &amp; Shaver Clean" src="./project1_files/product1.png"></div><div class="category-title">Exercise Bike &amp; Shaver Clean</div></div></button><button class="cat-item " aria-pressed="false"><div class="category-card"><div class="category-media"><img alt="Wireless &amp; Watches" src="./project1_files/product2.png"></div><div class="category-title">Wireless &amp; Watches</div></div></button><button class="cat-item " aria-pressed="false"><div class="category-card"><div class="category-media"><img alt="Camera Bluetooth &amp; Headset" src="./project1_files/product3.png"></div><div class="category-title">Camera Bluetooth &amp; Headset</div></div></button><button class="cat-item " aria-pressed="false"><div class="category-card"><div class="category-media"><img alt="Ipad Phone &amp; Tablets" src="./project1_files/product4.png"></div><div class="category-title">Ipad Phone &amp; Tablets</div></div></button></div><div class="categories-indicator-wrap" aria-hidden="true"><div class="categories-indicator" style="transform: translateX(calc(0%)); width: calc(25%);"></div></div></section><div><div class="eyebrow-header"><div>Popular Products</div></div><div class="app"><h2>Popular Products</h2><div class="tabs"><button class="active">Top Rated</button><button class="">Best Selling</button><button class="">Latest Product</button></div><div class="product-list"><div class="product-card"><div class="image-container"><img alt="Apple Watch Series 8" src="./project1_files/product5.png"><div class="icon-panel"><button class="side-icon">❤️</button><button class="side-icon">👁</button><button class="side-icon">🔗</button></div><div class="add-to-cart">Add to Cart</div></div><div class="product-info"><h3>Apple Watch Series 8</h3><p class="price">$188</p></div></div><div class="product-card"><div class="image-container"><img alt="TECLAST Tablet Protective Cover Case" src="./project1_files/product6.png"><div class="icon-panel"><button class="side-icon">❤️</button><button class="side-icon">👁</button><button class="side-icon">🔗</button></div><div class="add-to-cart">Add to Cart</div></div><div class="product-info"><h3>TECLAST Tablet Protective Cover Case</h3><p class="price"><span class="original-price">$899</span><span class="discounted-price">$791.12</span><span class="sale-tag">-12%</span></p></div></div><div class="product-card"><div class="image-container"><img alt="ViewSonic Professional Monitor" src="./project1_files/product7.png"><div class="icon-panel"><button class="side-icon">❤️</button><button class="side-icon">👁</button><button class="side-icon">🔗</button></div><div class="add-to-cart">Add to Cart</div></div><div class="product-info"><h3>ViewSonic Professional Monitor</h3><p class="price"><span class="original-price">$299</span><span class="discounted-price">$281.06</span><span class="sale-tag">-6%</span></p></div></div><div class="product-card"><div class="image-container"><img alt="Buy Guild Planer - 900w" src="./project1_files/product8.png"><div class="icon-panel"><button class="side-icon">❤️</button><button class="side-icon">👁</button><button class="side-icon">🔗</button></div><div class="add-to-cart">Add to Cart</div></div><div class="product-info"><h3>Buy Guild Planer - 900w</h3><p class="price">$239</p></div></div></div></div></div></div>
+    <script type="module" src="./project1_files/main.jsx"></script>
+  
+
+</body></html>

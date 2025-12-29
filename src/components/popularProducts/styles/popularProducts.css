@@ -1,0 +1,12 @@
+.eyebrow-header{
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.1;
+  color: var(--muted);
+  border-left: 3px solid #ff6b9f;
+  padding-left: 12px;
+  margin-bottom: 18px;
+  margin-left: 45px;
+  margin-top: 6rem;
+}

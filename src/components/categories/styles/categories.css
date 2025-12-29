@@ -1,0 +1,102 @@
+:root{
+  --accent: #ff2d5b;
+  --muted: #6b7280;
+  --text: #0b1020;
+}
+
+.categories{
+    width: 1430px;
+    margin: 48px auto;
+    height: 350px;
+}
+
+.categories-row{
+  display: flex;
+  align-items:center;
+  --count: 4;
+  height: inherit;
+}
+
+.cat-item{
+  flex: 1 1 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  height: inherit;
+}
+
+.category-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 8px 12px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(11,16,32,0.04);
+  width: 100%;
+  height: inherit;
+}
+.category-media{
+      width: 100%;
+}
+.category-media img{
+  width: 100%;
+  height: 160px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:6px;
+  overflow:hidden;
+  height: 250px;
+}
+
+.category-title{
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+  font-size: 15px;
+}
+
+.categories-indicator-wrap{
+  margin-top: 18px;
+  height: 4px;
+  position: relative;
+  background: linear-gradient(90deg, rgba(0,0,0,0.04), rgba(0,0,0,0.02));
+}
+
+.categories-indicator{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, var(--accent), #ff6b9f);
+  transition: transform 360ms cubic-bezier(.2,.9,.2,1), opacity 240ms;
+  border-radius: 2px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03) inset;
+}
+
+.cat-item:focus .category-card,
+.cat-item:hover .category-card{
+  outline: none;
+  transform: translateY(-4px);
+  transition: transform 220ms;
+}
+
+.cat-item.active .category-title{
+  color: var(--text);
+  height: inherit;
+}
+
+@media (max-width:900px){
+  .categories-row{ gap: 18px; }
+  .category-media{ height:140px; }
+}
+@media (max-width:640px){
+  .categories-row{ flex-direction: row; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom:8px; }
+  .cat-item{ min-width: 240px; flex: 0 0 240px; scroll-snap-align: start; }
+  .categories-indicator{ display:none; }
+}
