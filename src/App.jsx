@@ -6,8 +6,9 @@ function App() {
 
   return (
     <>
-      <h1>Konukko</h1>
+      
       <Home />
+      <h1>Konukko</h1>
     </>
   )
 }
